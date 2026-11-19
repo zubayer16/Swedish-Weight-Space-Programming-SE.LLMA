@@ -1,0 +1,13 @@
+# Prespecified before collecting or evaluating the confirmation sample.
+question: Does uniform per-layer magnitude selection beat relative-norm allocation?
+primary_fraction: 0.3
+secondary_fraction: 0.1
+confirmation_documents_per_language: 50
+confirmation_directory: data/follow_up
+results_directory: results/follow_up
+methods: [balanced, layer, magnitude, random]
+original_config: configs/experiment.yaml
+original_results: results/wikipedia/full
+bootstrap_samples: 2000
+bootstrap_seed: 2026
+seeds: [17, 29, 43]
