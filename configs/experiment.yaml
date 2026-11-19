@@ -1,0 +1,14 @@
+base_model: HuggingFaceTB/SmolLM2-135M
+swedish_model: jekunz/smollm-135m-cpt-fineweb-swedish
+base_revision: 93efa2f097d58c2a74874c7e644dbc9b0cee75a2
+swedish_revision: 3a80f1642cffaf656958647e213e49436415134d
+fractions: [0.1, 0.3]
+seeds: [17, 29, 43]
+context_length: 128
+threads: 4
+bootstrap_samples: 2000
+evaluation_dataset: wikipedia
+dataset_directory: data
+expected_documents_per_language: 150
+results_directory: results/wikipedia
+inference_batch_size: 8

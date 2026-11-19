@@ -1,0 +1,12 @@
+# Preserve exact bytes used by frozen corpus, result, and source fingerprints.
+# -text controls line-ending conversion; normal text diffs remain available.
+data/*.jsonl -text
+data/*.json -text
+data/**/*.jsonl -text
+data/**/*.json -text
+results/** -text
+src/*.py -text
+reports/*.pdf -text
+reports/legacy/** -text
+*.zip binary
+*.docx binary
